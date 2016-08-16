@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="month_picker_year_padding">25dp</dimen>
+    <dimen name="month_picker_month_button_margin">5dp</dimen>
+    <dimen name="month_picker_button_side_size">75dp</dimen>
+    <dimen name="month_picker_month_button_text_size">20sp</dimen>
+
+    <color name="month_picker_month_button_background_color">@color/orange</color>
+    <color name="month_picker_month_button_active_background_color">@color/mustard</color>
+    <color name="month_picker_month_button_text_color">@color/white</color>
+    <color name="month_picker_pick_button_background">@color/transparent</color>
+</resources>

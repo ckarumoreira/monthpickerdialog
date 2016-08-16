@@ -1,0 +1,18 @@
+<resources>
+    <string name="month_picker_ok_button">OK</string>
+    <string name="month_picker_cancel_button">Cancel</string>
+    <string name="month_picker_dialog_title">Pick a month</string>
+    <string name="month_picker_december_text">dec</string>
+    <string name="month_picker_november_text">nov</string>
+    <string name="month_picker_october_text">oct</string>
+    <string name="month_picker_september_text">sep</string>
+    <string name="month_picker_august_text">aug</string>
+    <string name="month_picker_july_text">jul</string>
+    <string name="month_picker_june_text">jun</string>
+    <string name="month_picker_may_text">may</string>
+    <string name="month_picker_april_text">apr</string>
+    <string name="month_picker_march_text">mar</string>
+    <string name="month_picker_february_text">feb</string>
+    <string name="month_picker_january_text">jan</string>
+    <string name="app_name">monthpicker</string>
+</resources>

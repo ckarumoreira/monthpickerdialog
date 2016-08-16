@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/month_picker_dialog_title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textStyle="bold"
+        android:background="@color/orange"
+        android:textColor="@color/white" />
+
+    <com.wefika.horizontalpicker.HorizontalPicker
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/year_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:ellipsize="middle"
+        android:marqueeRepeatLimit="-1"
+        app:values="@array/years"
+        app:dividerSize="@dimen/month_picker_year_padding"
+        app:sideItems="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin">
+        <GridLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:columnCount="3">
+            <Button android:id="@+id/button_january"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_january_text" />
+            <Button android:id="@+id/button_february"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_february_text" />
+            <Button android:id="@+id/button_march"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_march_text" />
+
+            <Button android:id="@+id/button_april"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_april_text" />
+            <Button android:id="@+id/button_may"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_may_text" />
+            <Button android:id="@+id/button_june"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_june_text" />
+
+            <Button android:id="@+id/button_july"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_july_text" />
+            <Button android:id="@+id/button_august"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_august_text" />
+            <Button android:id="@+id/button_september"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_september_text" />
+
+            <Button android:id="@+id/button_october"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_october_text" />
+            <Button android:id="@+id/button_november"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_november_text" />
+            <Button android:id="@+id/button_december"
+                style="@style/MonthPickerButton"
+                android:layout_width="@dimen/month_picker_button_side_size"
+                android:layout_height="@dimen/month_picker_button_side_size"
+                android:text="@string/month_picker_december_text" />
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/month_picker_pick_button_background"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:text="@string/month_picker_cancel_button"/>
+
+            <Button
+                android:id="@+id/button_pick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/month_picker_pick_button_background"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:text="@string/month_picker_ok_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
