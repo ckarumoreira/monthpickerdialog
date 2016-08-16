@@ -6,13 +6,22 @@ A Month Picker for those who need to take a month from a year without having to 
 
 # Usage
 
-    // instantiate your month picker
+    /* instantiate your month picker
+    ------------------------------------------------------------------------ */
     MonthPickerDialog picker = new MonthPickerDialog(context);
-    // you can perform an action when you're showing your dialog (using DialogInterface.OnShowListener)
+    
+    /* you can perform an action when you're showing your dialog (using DialogInterface.OnShowListener)
+    ------------------------------------------------------------------------ */
     picker.setOnShowListener(listener);
-    // you can perform an action whenever you pick your month (using MonthPickerDialog.OnMonthPickListener)
+    
+    /* you can perform an action whenever you pick your month (using MonthPickerDialog.OnMonthPickListener)
+    ------------------------------------------------------------------------ */
     picker.setOnMonthPickListener(listener);
-    // show your month picker
+    
+    /* show your month picker
+    ------------------------------------------------------------------------ */
     picker.show();
-    // hide your month picker
+    
+    /* hide your month picker
+    ------------------------------------------------------------------------ */
     picker.hide();
