@@ -6,6 +6,7 @@ A Month Picker for those who need to take a month from a year without having to 
 
 # Usage
 
+```java
     /* instantiate your month picker
     ------------------------------------------------------------------------ */
     MonthPickerDialog picker = new MonthPickerDialog(context);
@@ -25,3 +26,4 @@ A Month Picker for those who need to take a month from a year without having to 
     /* hide your month picker
     ------------------------------------------------------------------------ */
     picker.hide();
+```
